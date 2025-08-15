@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body><center>
+    <h1>Simple caculator</h1>
+    </center>
+    <form name="caculator">
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" name="display" id="display" disabled  placeholder="0"> 
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" name="seven" value="7" onclick="caculator.display.value += '7'" ></td>
+                <td><input type="button" name="eight" value="8" onclick="caculator.display.value += '8'" ></td>
+                <td><input type="button" name="nine" value="9" onclick="caculator.display.value += '9'" ></td>
+                <td><input type="button" name="times" class="operator" value="x" onclick="caculator.display.value += '*'" ></td>
+            </tr>
+                        <tr>
+                <td><input type="button" name="four" value="4" onclick="caculator.display.value += '4'" ></td>
+                <td><input type="button" name="five" value="5" onclick="caculator.display.value += '5'" ></td>
+                <td><input type="button" name="six" value="6" onclick="caculator.display.value += '6'" ></td>
+                <td><input type="button" name="minus" class="operator" value="-" onclick="caculator.display.value += '-'" ></td>
+            </tr>            <tr>
+                <td><input type="button" name="one" value="1" onclick="caculator.display.value += '1'" ></td>
+                <td><input type="button" name="two" value="2" onclick="caculator.display.value += '2'" ></td>
+                <td><input type="button" name="three" value="3" onclick="caculator.display.value += '3'" ></td>
+                <td><input type="button" name="plus" class="operator" value="+" onclick="caculator.display.value += '+'" ></td>
+            </tr>            <tr>
+                <td><input type="button" name="clear" value="c" onclick="caculator.display.value = ''" ></td>
+                <td><input type="button" name="zero" value="0" onclick="caculator.display.value += '0'" ></td>
+                <td><input type="button" name="doit" value="=" onclick="caculator.display.value = eval(caculator.display.value)" ></td>
+                <td><input type="button" name="div" class="operator" value="/" onclick="caculator.display.value += '/'" ></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
